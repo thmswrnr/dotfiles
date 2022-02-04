@@ -1,0 +1,52 @@
+// plugins:
+// - vim
+// - test explorer ui
+// - remote development
+// - python type hint
+// - python snippets
+// - python preview
+// - python docstring generator
+// - indent-rainbow
+// - bracket pair colorizer 2 (no active development)
+// - trailing spaces
+// - docker
+// - todo highlight
+{
+    "python.languageServer": "Default",
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=120",
+        "--ignore=E402,F841,F401,E302,E305",
+    ],
+    "python.linting.mypyEnabled": true,
+    "python.linting.banditEnabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--generate-members"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.formatting.provider": "black",
+    "gitlens.keymap": "alternate",
+    "gitlens.advanced.messages": {
+        "suppressGitMissingWarning": true
+    },
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": false
+    },
+    "editor.suggestSelection": "first",
+    "vim.smartRelativeLine": true,
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.preferredDarkColorTheme": "Solarized Dark",
+    "workbench.preferredLightColorTheme": "Solarized Light",
+    "editor.rulers": [
+        120,
+    ],
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "trailing-spaces.trimOnSave": true,
+}
